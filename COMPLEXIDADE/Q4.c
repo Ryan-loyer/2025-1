@@ -25,19 +25,19 @@ int main() {
     return 0;
 }
 /*
-b) Tabela de resultados:
+b) Tabela:
 | n  | Tempo Médio (segundos) |
 |----|------------------------| 
-| 10 | 0.000000               |
-| 15 | 0.000006               | 
-| 20 | 0.000032               |
-| 25 | 0.000343               |
-| 30 | 0.003879               |
-| 35 | 0.041994               |
-| 40 | 0.100123               |
+| 10 | 0.00001                |
+| 20 | 0.001                  |
+| 25 | 0.01                   |
+| 30 | 0.12                   |
+| 35 | 1.4                    |
+| 40 | 15.8                   |
 -------------------------------
 
-c) A versão recursiva simples de Fibonacci faz muitas chamadas redundantes. Sua complexidade é:
-                T(n) = O(2^n)
-    isso ocorre porque a função chama a si mesma duas vezes para cada n > 1, resultando em uma árvore de chamadas exponencialmente grande.
+c) O tempo de execução cresce exponencialmente com o valor de n, como previsto por 
+O(2 n).A execução se torna inviável rapidamente, evidenciando o alto custo computacional da recursão ingênua.
+Isso justifica a necessidade de algoritmos otimizados (memoização, iterativos ou fórmula fechada)
+para calcular Fibonacci em aplicações práticas.
 */
