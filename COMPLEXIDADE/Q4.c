@@ -36,8 +36,8 @@ b) Tabela:
 | 40 | 15.8                   |
 -------------------------------
 
-c) A versão recursiva simples da sequência de Fibonacci faz muitas chamadas repetidas, pois para cada valor de n>1, a função chama a si mesma duas vezes. 
-Isso gera uma árvore de chamadas que cresce de forma exponencial
-, resultando em uma complexidade de tempo aproximada de O(2 n).
-Em outras palavras, o número de chamadas de função dobra a cada incremento em n, tornando o algoritmo ineficiente para valores grandes.
+c) O tempo de execução cresce exponencialmente com o valor de n, como previsto por 
+O(2 n).A execução se torna inviável rapidamente, evidenciando o alto custo computacional da recursão ingênua.
+Isso justifica a necessidade de algoritmos otimizados (memoização, iterativos ou fórmula fechada)
+para calcular Fibonacci em aplicações práticas.
 */
